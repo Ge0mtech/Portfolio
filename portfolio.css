@@ -201,7 +201,7 @@
   justify-content: center;
 }
 
-.space-x-6 > * {
+.space-x-6>* {
   margin-right: 1.5rem;
 }
 
@@ -210,6 +210,5 @@
 }
 
 .text-purple-600 {
-    color: #6b46c1;
-  }
-  
+  color: #6b46c1;
+}
