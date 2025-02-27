@@ -1,145 +1,214 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <link rel="icon" href="./images/icon.png" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio de Swan Cuvelier</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./images/icon.png" type="image/x-icon">
 </head>
-
 <body>
-    <div class="min-h-screen bg-gray-100 p-8">
-        <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
-            <!-- En-tête Profil -->
-            <div class="bg-blue-600 text-white p-6 text-center">
-                <h1 class="text-3xl font-bold">Swan Cuvelier</h1>
-                <p class="text-xl">Étudiant en Informatique | Spécialisation Réseaux & Administration Système</p>
-            </div>
+  <div class="min-h-screen bg-gray-100 p-8">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
 
-            <!-- Informations Personnelles -->
-            <div class="p-6">
-                <h2 class="text-xl font-semibold mb-4 flex items-center">
-                    <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    Profil
-                </h2>
-                <p>Titulaire d'un bac Systèmes Numériques option C avec mention bien, je suis passionné par les réseaux
-                    et l'administration système. Je voudrais me spécialiser dans la gestion et l'optimisation des systèmes informatiques
-                    performantes et sécurisées, en mettant un accent particulier sur la cybersécurité.</p>
-            </div>
+      <!-- En-tête -->
+      <header class="bg-blue-600 text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">Swan Cuvelier</h1>
+        <p class="text-xl">Étudiant en Réseaux & Cybersécurité | Passionné d'infrastructure & virtualisation</p>
+      </header>
 
-            <!-- Projets -->
-            <div class="bg-gray-50 p-6">
-                <h2 class="text-2xl font-bold mb-6 flex items-center">
-                    <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                        <polyline points="14 2 14 8 20 8"></polyline>
-                        <line x1="16" y1="13" x2="8" y2="13"></line>
-                        <line x1="16" y1="17" x2="8" y2="17"></line>
-                        <polyline points="10 9 9 9 8 9"></polyline>
-                    </svg>
-                    Projets Techniques
-                </h2>
-                <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-600">Homelab</h3>
-                    <p class="text-gray-700 mb-2">Mise en place d'une infrastructure réseau avec une Zimablade
-                        utilisé comme point d'accès via Twingate, permettant un accès sécurisé au réseau
-                        local et à un serveur DELL PowerEdge R720 hébergé sous Proxmox</p>
-                    <ul class="list-disc pl-5 text-gray-600 mb-2">
-                        <li>Configuration de Twingate pour un accès réseau distant sécurisé et sans configuration
-                            complexe</li>
-                        <li>Hébergement de machines virtuelles et containers sur serveur DELL R720</li>
-                        <li>Utilisation de Proxmox comme plateforme de virtualisation</li>
-                        <li>Déploiement de containers Docker et LXC</li>
-                    </ul>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Zimablade</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Twingate</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Proxmox</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Docker</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">LXC</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Infrastructure
-                            Réseau</span>
-                    </div>
-                </div>
-                <!-- Projet Arduino -->
-                <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-600">Projet Arduino</h3>
-                    <ul class="list-disc pl-5 text-gray-600 mb-2">
-                        <li>Impression 3D des composants structurels</li>
-                        <li>Programmation des mouvements et de la logique de contrôle en langage C</li>
-                        <li>Intégration de servomoteurs pour les articulations</li>
-                    </ul>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Arduino</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Programmation C</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Impression 3D</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Robotique</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Electronique</span>
-                    </div>
-                </div>
+      <!-- Profil -->
+      <section class="p-6">
+        <h2 class="text-xl font-semibold mb-4 flex items-center">
+          <!-- Icône profil (exemple SVG) -->
+          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+          Profil
+        </h2>
+        <p>
+            Titulaire d'un bac Systèmes Numériques option C avec mention bien, je suis passionné par les réseaux
+            et l'administration système. Je voudrais me spécialiser dans la gestion et l'optimisation des systèmes informatiques
+            performantes et sécurisées, en mettant un accent particulier sur la cybersécurité.
+        </p>
+          </section>
 
-                <!-- Projet Morpion en Python -->
-                <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-600">Morpion en Python</h3>
-                    <p class="text-gray-700 mb-2">Développement d'un jeu de morpion en Python, permettant à deux joueurs
-                        de s'affronter sur une grille de 3x3.</p>
-                    <ul class="list-disc pl-5 text-gray-600 mb-2">
-                        <li>Implémentation de la logique du jeu en Python</li>
-                        <li>Création d'une interface utilisateur simple en utilisant Tkinter</li>
-                        <li>Gestion des conditions de victoire et des égalités</li>
-                    </ul>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Python</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Tkinter</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Jeu</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Morpion</span>
-                    </div>
-                </div>
-
-                <!-- Site de fan en HTML/CSS -->
-                <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold text-blue-600">Site de fan en HTML/CSS</h3>
-                    <p class="text-gray-700 mb-2">Création d'un site de fan dédié à Linus Torvalds, Richard Stallman et
-                        Ken Thompson.</p>
-                    <ul class="list-disc pl-5 text-gray-600 mb-2">
-                        <li>Présentation des biographies et des contributions de Linus Torvalds, Richard Stallman et Ken
-                            Thompson</li>
-                        <li>Utilisation de HTML et CSS pour la mise en page et le design</li>
-                        <li>Intégration de photos et de citations célèbres</li>
-                    </ul>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">HTML</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">CSS</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Linus Torvalds</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Richard Stallman</span>
-                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Ken Thompson</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contacts & Réseaux -->
-            <div class="p-6 bg-gray-200 flex justify-center space-x-6">
-                <a href="https://github.com/CV-DEBUG" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-purple-600">
-                    <img src="./images/github.png" alt="GitHub" width="32" height="32">
-                </a>
-                <a href="https://www.reddit.com/u/_CVL_" target="_blank" rel="noopener noreferrer"
-                    class="hover:text-purple-600">
-                    <img src="images/reddit.png" alt="Reddit" width="32" height="32">
-                </a>
-
-            </div>
-
+        <!-- Expérience Professionnelle -->
+        <section class="bg-gray-50 p-6"></section>
+        <h2 class="text-2xl font-bold mb-6 flex items-center">
+          <!-- Icône expérience -->
+          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+            <path d="M16 3h4v4"></path>
+          </svg>
+          Expérience Professionnelle
+        </h2>
+        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-blue-600">Arcanes – Intégrateur Sage X3</h3>
+          <p class="text-gray-700 mb-2">
+            Stage pratique (25 mars - 20 avril 2024) : Développement d'une application web de gestion de listes de films et séries avec Docker, MySQL et Laravel.
+          </p>
         </div>
+        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-blue-600">APHM - Hôpital Nord</h3>
+          <p class="text-gray-700 mb-2">
+            Stage pratique (27 nov. - 22 déc. 2023) : Installation de Windows via serveur PXE et gestion des demandes informatiques (GLPI).
+          </p>
+        </div>
+        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-blue-600">Pôle Emploi – Direction Régionale PACA</h3>
+          <p class="text-gray-700 mb-2">
+            Stage pratique (16 janv. - 10 fév. 2023) : Initiation à Active Directory et gestion des utilisateurs sur Windows Server.
+          </p>
+        </div>
+        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-blue-600">Régie des Transports Métropolitains (RTM)</h3>
+          <p class="text-gray-700 mb-2">
+            Stage pratique (7 juin - 1er juil. 2022) : Création d'un site web en HTML/CSS.
+          </p>
+        </div>
+        </section>
+
+      <!-- Projets Techniques -->
+      <section class="p-6">
+        <h2 class="text-2xl font-bold mb-6 flex items-center">
+          <!-- Icône projets -->
+          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+          </svg>
+          Projets Techniques
+        </h2>
+        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-blue-600">Homelab</h3>
+          <p class="text-gray-700 mb-2">
+            Mise en place d'une infrastructure réseau basée sur un Zimablade sous TrueNAS Scale et un serveur DELL PowerEdge R720 sous Proxmox. Configuration de Twingate pour un accès distant sécurisé et hébergement de services via Docker.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 mb-2">
+            <li>Configuration de Twingate pour un accès distant sécurisé</li>
+            <li>Hébergement de VMs et containers sur serveur DELL R720</li>
+            <li>Utilisation de Proxmox pour la virtualisation</li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Zimablade</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Twingate</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">TrueNAS Scale</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Proxmox</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Docker</span>
+          </div>
+        </div>
+                <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+                  <h3 class="text-xl font-semibold text-blue-600">Infra : DNS, DHCP, SSH, SFTP, FTP</h3>
+                  <p class="text-gray-700 mb-2">
+                    Mise en place d'une infrastructure réseau complète sous Debian avec différents services essentiels.
+                  </p>
+                  <ul class="list-disc pl-5 text-gray-600 mb-2">
+                    <li>Configuration de serveurs DNS (Bind9) et DHCP pour la gestion du réseau</li>
+                    <li>Implémentation de services de transfert sécurisé (SSH, SFTP, FTP)</li>
+                    <li>Documentation détaillée des configurations et procédures</li>
+                  </ul>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Debian</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">DNS</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">DHCP</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">SSH/SFTP</span>
+                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">FTP</span>
+                  </div>
+                </div>
+        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-blue-600">Serveur VoIP avec Asterisk</h3>
+          <p class="text-gray-700 mb-2">
+            Déploiement et configuration d'un serveur de téléphonie sur IP avec Asterisk sur système Debian.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 mb-2">
+            <li>Installation et paramétrage du PABX Asterisk</li>
+            <li>Configuration de postes SIP et plan de numérotation</li>
+            <li>Mise en place de services avancés (messagerie vocale, IVR)</li>
+            <li>Sécurisation du système contre les attaques courantes</li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Debian</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Asterisk</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">VoIP</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">SIP</span>
+          </div>
+        </div>
+        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold text-blue-600">Site de fan en HTML/CSS</h3>
+          <p class="text-gray-700 mb-2">
+            Création d'un site dédié à Linus Torvalds, Richard Stallman et Ken Thompson, présentant leurs biographies et contributions.
+          </p>
+          <ul class="list-disc pl-5 text-gray-600 mb-2">
+            <li>Utilisation de HTML et CSS pour la mise en page et le design</li>
+            <li>Intégration de photos et citations célèbres</li>
+          </ul>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">HTML</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">CSS</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Formations & Compétences -->
+      <section class="bg-gray-50 p-6">
+        <h2 class="text-2xl font-bold mb-6 flex items-center">
+          <!-- Icône formations -->
+          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12l-4-4v3H3v2h15v3z"></path>
+            <path d="M14 22H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7"></path>
+          </svg>
+          Formations & Compétences
+        </h2>
+        <div class="mb-4">
+          <h3 class="text-xl font-semibold text-blue-600">Formations</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li>BAC PRO Système Numérique - Option C (Septembre 2021 - Juin 2024) – Obtenu avec mention Bien</li>
+            <li>Bachelor IT - Cybersécurité à La Plateforme_ (Octobre 2024 - Juillet 2025)</li>
+          </ul>
+        </div>
+        <div class="mb-4">
+          <h3 class="text-xl font-semibold text-blue-600">Compétences Techniques</h3>
+          <ul class="list-disc pl-5 text-gray-600">
+            <li><strong>Virtualisation & Conteneurisation :</strong> Docker, Podman, VMware, Oracle VirtualBox, Proxmox, ESXi</li>
+            <li><strong>Systèmes & Réseaux :</strong> Linux (administration & scripts Bash), VoIP (Asterisk), DNS (Bind9)</li>
+            <li><strong>Gestion & Déploiement :</strong> Git, GitHub</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Centres d'Intérêt -->
+      <section class="p-6">
+        <h2 class="text-xl font-semibold mb-4 flex items-center">
+          <!-- Icône centres d'intérêt -->
+          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12" y2="16"></line>
+          </svg>
+          Centres d'Intérêt
+        </h2>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Homelab</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Pop-Culture</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Jeux Vidéo</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Comics</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Voyage</span>
+          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Impression 3D</span>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <footer class="p-6 bg-gray-200 flex flex-col items-center">
+        <div class="mb-4">
+          <p><strong>Téléphone :</strong> 06 44 71 48 70</p>
+          <p><strong>Email :</strong> swancuvelier@gmail.com</p>
+          <p><strong>Localisation :</strong> Marseille - 13005</p>
+        </div>
+      </footer>
     </div>
+  </div>
 </body>
 </html>
