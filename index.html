@@ -1,214 +1,149 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio CVL</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./images/icon.png" type="image/x-icon">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/img/ena.ico" type="image/x-icon">
+  </head>
 <body>
-  <div class="min-h-screen bg-gray-100 p-8">
-    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+    <header>
+      <div class="header-content">
+      <h1>SWAN CUVELIER</h1>
+      <p>ÉTUDIANT RÉSEAU</p>
+      <div class="contact-info">
+      <a href="mailto:swancuvelier@gmail.com"><i class="fas fa-envelope"></i> swancuvelier@gmail.com</a>
+      <a href="https://www.linkedin.com/in/swan-cuvelier-314aa533b/" target="_blank" style="margin-left: 10px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://github.com/Ge0mtech" target="_blank" style="margin-left: 10px;"><i class="fab fa-github"></i> GitHub</a>
+      <i class="fas fa-map-marker-alt" style="margin-left: 10px;"></i> Marseille
+      </div>
+      </div>
+    </header>
 
-      <!-- En-tête -->
-      <header class="bg-blue-600 text-white p-6 text-center">
-        <h1 class="text-3xl font-bold">Swan Cuvelier</h1>
-        <p class="text-xl">Étudiant en Réseaux & Cybersécurité | Passionné d'infrastructure & virtualisation</p>
-      </header>
+    <nav>
+        <ul>
+            <li><a href="#competences"><i class="fas fa-code"></i> Compétences</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
+            <li><a href="#formations"><i class="fas fa-graduation-cap"></i> Formations</a></li>
+            <li><a href="#interets"><i class="fas fa-heart"></i> Intérêts</a></li>
+            <li><a href="#projets-personnels"><i class="fas fa-rocket"></i> Projets</a></li>
+        </ul>
+    </nav>
 
-      <!-- Profil -->
-      <section class="p-6">
-        <h2 class="text-xl font-semibold mb-4 flex items-center">
-          <!-- Icône profil (exemple SVG) -->
-          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-            <circle cx="12" cy="7" r="4"></circle>
-          </svg>
-          Profil
-        </h2>
-        <p>
-            Titulaire d'un bac Systèmes Numériques option C avec mention bien, je suis passionné par les réseaux
-            et l'administration système. Je voudrais me spécialiser dans la gestion et l'optimisation des systèmes informatiques
-            performantes et sécurisées, en mettant un accent particulier sur la cybersécurité.
-        </p>
-          </section>
-
-        <!-- Expérience Professionnelle -->
-        <section class="bg-gray-50 p-6"></section>
-        <h2 class="text-2xl font-bold mb-6 flex items-center">
-          <!-- Icône expérience -->
-          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-            <path d="M16 3h4v4"></path>
-          </svg>
-          Expérience Professionnelle
-        </h2>
-        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-blue-600">Arcanes – Intégrateur Sage X3</h3>
-          <p class="text-gray-700 mb-2">
-            Stage pratique (25 mars - 20 avril 2024) : Développement d'une application web de gestion de listes de films et séries avec Docker, MySQL et Laravel.
-          </p>
-        </div>
-        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-blue-600">APHM - Hôpital Nord</h3>
-          <p class="text-gray-700 mb-2">
-            Stage pratique (27 nov. - 22 déc. 2023) : Installation de Windows via serveur PXE et gestion des demandes informatiques (GLPI).
-          </p>
-        </div>
-        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-blue-600">Pôle Emploi – Direction Régionale PACA</h3>
-          <p class="text-gray-700 mb-2">
-            Stage pratique (16 janv. - 10 fév. 2023) : Initiation à Active Directory et gestion des utilisateurs sur Windows Server.
-          </p>
-        </div>
-        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-blue-600">Régie des Transports Métropolitains (RTM)</h3>
-          <p class="text-gray-700 mb-2">
-            Stage pratique (7 juin - 1er juil. 2022) : Création d'un site web en HTML/CSS.
-          </p>
-        </div>
+    <main>
+        <section id="competences" class="section">
+            <h2><i class="fas fa-code"></i> COMPÉTENCES TECHNIQUES</h2>
+            <div class="competence-group">
+          <h3>Virtualisation et Conteneurisation</h3>
+          <ul>
+              <li>Docker</li>
+              <li>Podman</li>
+              <li>VMware</li>
+              <li>Oracle VirtualBox</li>
+              <li>Proxmox</li>
+              <li>ESXi</li>
+          </ul>
+            </div>
+            <div class="competence-group">
+          <h3>Systèmes et Réseaux</h3>
+          <ul>
+              <li>VoIP avec Asterisk</li>
+              <li>Gestion DNS avec BIND9</li>
+              <li>Serveur DHCP avec Kea-DHCP4</li>
+              <li>Serveur FTP avec VSFTPD</li>
+              <li>Accès sécurisé SSH avec OpenSSH</li>
+          </ul>
+          <h4>Serveurs NAS:</h4>
+          <ul>
+              <li>Configuration avec TrueNAS Scale</li>
+              <li>Configuration directe sur Debian</li>
+          </ul>
+            </div>
+            <div class="competence-group">
+          <h3>Gestion et Déploiement</h3>
+          <ul>
+              <li>Git & GitHub (Versioning & Collaboration)</li>
+          </ul>
+            </div>
         </section>
 
-      <!-- Projets Techniques -->
-      <section class="p-6">
-        <h2 class="text-2xl font-bold mb-6 flex items-center">
-          <!-- Icône projets -->
-          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-            <polyline points="14 2 14 8 20 8"></polyline>
-            <line x1="16" y1="13" x2="8" y2="13"></line>
-            <line x1="16" y1="17" x2="8" y2="17"></line>
-          </svg>
-          Projets Techniques
-        </h2>
-        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-blue-600">Homelab</h3>
-          <p class="text-gray-700 mb-2">
-            Mise en place d'une infrastructure réseau basée sur un Zimablade sous TrueNAS Scale et un serveur DELL PowerEdge R720 sous Proxmox. Configuration de Twingate pour un accès distant sécurisé et hébergement de services via Docker.
-          </p>
-          <ul class="list-disc pl-5 text-gray-600 mb-2">
-            <li>Configuration de Twingate pour un accès distant sécurisé</li>
-            <li>Hébergement de VMs et containers sur serveur DELL R720</li>
-            <li>Utilisation de Proxmox pour la virtualisation</li>
-          </ul>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Zimablade</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Twingate</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">TrueNAS Scale</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Proxmox</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Docker</span>
-          </div>
-        </div>
-                <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-                  <h3 class="text-xl font-semibold text-blue-600">Infra : DNS, DHCP, SSH, SFTP, FTP</h3>
-                  <p class="text-gray-700 mb-2">
-                    Mise en place d'une infrastructure réseau complète sous Debian avec différents services essentiels.
-                  </p>
-                  <ul class="list-disc pl-5 text-gray-600 mb-2">
-                    <li>Configuration de serveurs DNS (Bind9) et DHCP pour la gestion du réseau</li>
-                    <li>Implémentation de services de transfert sécurisé (SSH, SFTP, FTP)</li>
-                    <li>Documentation détaillée des configurations et procédures</li>
-                  </ul>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Debian</span>
-                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">DNS</span>
-                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">DHCP</span>
-                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">SSH/SFTP</span>
-                    <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">FTP</span>
-                  </div>
-                </div>
-        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-blue-600">Serveur VoIP avec Asterisk</h3>
-          <p class="text-gray-700 mb-2">
-            Déploiement et configuration d'un serveur de téléphonie sur IP avec Asterisk sur système Debian.
-          </p>
-          <ul class="list-disc pl-5 text-gray-600 mb-2">
-            <li>Installation et paramétrage du PABX Asterisk</li>
-            <li>Configuration de postes SIP et plan de numérotation</li>
-            <li>Mise en place de services avancés (messagerie vocale, IVR)</li>
-            <li>Sécurisation du système contre les attaques courantes</li>
-          </ul>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Debian</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Asterisk</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">VoIP</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">SIP</span>
-          </div>
-        </div>
-        <div class="mb-4 p-4 bg-white rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold text-blue-600">Site de fan en HTML/CSS</h3>
-          <p class="text-gray-700 mb-2">
-            Création d'un site dédié à Linus Torvalds, Richard Stallman et Ken Thompson, présentant leurs biographies et contributions.
-          </p>
-          <ul class="list-disc pl-5 text-gray-600 mb-2">
-            <li>Utilisation de HTML et CSS pour la mise en page et le design</li>
-            <li>Intégration de photos et citations célèbres</li>
-          </ul>
-          <div class="flex flex-wrap gap-2">
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">HTML</span>
-            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">CSS</span>
-          </div>
-        </div>
-      </section>
+        <section id="experience" class="section">
+            <h2><i class="fas fa-briefcase"></i> EXPÉRIENCE </h2>
 
-      <!-- Formations & Compétences -->
-      <section class="bg-gray-50 p-6">
-        <h2 class="text-2xl font-bold mb-6 flex items-center">
-          <!-- Icône formations -->
-          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M22 12l-4-4v3H3v2h15v3z"></path>
-            <path d="M14 22H5a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7"></path>
-          </svg>
-          Formations & Compétences
-        </h2>
-        <div class="mb-4">
-          <h3 class="text-xl font-semibold text-blue-600">Formations</h3>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li>BAC PRO Système Numérique - Option C (Septembre 2021 - Juin 2024) – Obtenu avec mention Bien</li>
-            <li>Bachelor IT - Cybersécurité à La Plateforme_ (Octobre 2024 - Juillet 2025)</li>
-          </ul>
-        </div>
-        <div class="mb-4">
-          <h3 class="text-xl font-semibold text-blue-600">Compétences Techniques</h3>
-          <ul class="list-disc pl-5 text-gray-600">
-            <li><strong>Virtualisation & Conteneurisation :</strong> Docker, Podman, VMware, Oracle VirtualBox, Proxmox, ESXi</li>
-            <li><strong>Systèmes & Réseaux :</strong> Linux (administration & scripts Bash), VoIP (Asterisk), DNS (Bind9)</li>
-            <li><strong>Gestion & Déploiement :</strong> Git, GitHub</li>
-          </ul>
-        </div>
-      </section>
+            <div class="experience-item">
+          <h3>La Plateforme_</h3>
+          <p class="date">Oct. 2024 - Juillet 2025</p>
+          <p><strong>Bachelor IT - Cybersécurité</strong></p>
+          <p>Participation à des projets en équipe (3-4 personnes) axés sur la simulation de réseaux avec Cisco Packet Tracer, développement de scripts Bash, administration Linux (CLI), et gestion d'infrastructures DNS, DHCP, SSH, SFTP, FTP, et NAS (Debian). Configuration de TrueNAS Scale avec RAID 6 et gestion de versioning via Git/GitHub.</p>
+            </div>
 
-      <!-- Centres d'Intérêt -->
-      <section class="p-6">
-        <h2 class="text-xl font-semibold mb-4 flex items-center">
-          <!-- Icône centres d'intérêt -->
-          <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="12" cy="12" r="10"></circle>
-            <line x1="12" y1="8" x2="12" y2="12"></line>
-            <line x1="12" y1="16" x2="12" y2="16"></line>
-          </svg>
-          Centres d'Intérêt
-        </h2>
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Homelab</span>
-          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Pop-Culture</span>
-          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Jeux Vidéo</span>
-          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Comics</span>
-          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Voyage</span>
-          <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm">Impression 3D</span>
-        </div>
-      </section>
+            <div class="experience-item">
+          <h3>Arcanes - Intégrateur Sage X3</h3>
+          <p class="date">25 mars - 20 avril 2024</p>
+          <p><strong>Stage pratique</strong></p>
+          <p>Développement d'une application web de gestion de listes de films et séries en utilisant Docker, MySQL, et Laravel.</p>
+            </div>
 
-      <!-- Contact -->
-      <footer class="p-6 bg-gray-200 flex flex-col items-center">
-        <div class="mb-4">
-          <p><strong>Téléphone :</strong> 06 44 71 48 70</p>
-          <p><strong>Email :</strong> swancuvelier@gmail.com</p>
-          <p><strong>Localisation :</strong> Marseille - 13005</p>
-        </div>
-      </footer>
-    </div>
-  </div>
+            <div class="experience-item">
+          <h3>APHM - HÔPITAL NORD</h3>
+          <p class="date">27 nov. - 22 déc. 2023</p>
+          <p><strong>STAGE PRATIQUE</strong></p>
+          <p>Installation de Windows via serveur PXE et gestion des demandes informatiques à l'aide de GLPI.</p>
+            </div>
+
+            <div class="experience-item">
+          <h3>Pôle Emploi - Direction Régionale PACA</h3>
+          <p class="date">16 janv. - 10 fév. 2023</p>
+          <p><strong>Stage pratique</strong></p>
+          <p>Initiation à Active Directory et gestion des utilisateurs sur Windows Server.</p>
+            </div>
+
+            <div class="experience-item">
+          <h3>Régie des Transports Métropolitains (RTM)</h3>
+          <p class="date">7 juin - 1er juil. 2022</p>
+          <p><strong>Stage pratique</strong></p>
+          <p>Création d'un site web en HTML/CSS.</p>
+            </div>
+        </section>
+
+        <section id="formations" class="section">
+            <h2><i class="fas fa-graduation-cap"></i> FORMATIONS</h2>
+            <div class="formation-item">
+          <h3>La Plateforme_</h3>
+          <p class="date">Oct. 2024 - Juillet 2025</p>
+          <p><strong>Bachelor IT - Cybersécurité</strong></p>
+            </div>
+            <div class="formation-item">
+          <h3>BAC PRO SYSTÈME NUMÉRIQUE - OPTION C</h3>
+          <p class="date">SEPTEMBRE 2021 - JUIN 2024</p>
+          <p>BAC PRO SN OBTENUE AVEC MENTION BIEN</p>
+            </div>
+        </section>
+
+        <section id="interets" class="section">
+            <h2><i class="fas fa-heart"></i> CENTRES D'INTÉRÊT</h2>
+            <ul class="interets-list">
+                <li><i class="fas fa-gamepad"></i> JEUX-VIDEOS</li>
+                <li><i class="fas fa-plane"></i> VOYAGE</li>
+                <li><i class="fas fa-book"></i> COMICS</li>
+                <li><i class="fas fa-users"></i> POP-CULTURE</li>
+                <li><i class="fas fa-print"></i> IMPRESSION 3D</li>
+            </ul>
+        </section>
+
+        <section id="projets-personnels" class="section">
+            <h2><i class="fas fa-rocket"></i> PROJETS PERSONNELS</h2>
+            <div class="projet-item">
+                <h3>Homelab</h3>
+                <p>Mise en place d'un homelab constitué d'une Zimablade sous TrueNAS Scale et d'un serveur DELL PowerEdge R720 sous Proxmox. Configuration de Twingate pour un accès distant sécurisé, ainsi que pour la gestion des machines virtuelles et des conteneurs via Proxmox. Hébergement de divers services à l'aide de Docker.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Swan Cuvelier</p>
+    </footer>
 </body>
 </html>
