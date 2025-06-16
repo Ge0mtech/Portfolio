@@ -5,145 +5,388 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="./img/ena.ico" type="image/x-icon">
-  </head>
+</head>
 <body>
-  <header>
-    <div class="header-content">
-      <h1>SWAN CUVELIER</h1>
-      <p>ALTERNANT EN ADMINISTRATION SYSTÈME</p>
-      <div class="contact-info">
-        <a href="mailto:swancuvelier@gmail.com"><i class="fas fa-envelope"></i> swancuvelier@gmail.com</a>
-        <a href="https://github.com/Ge0mtech" target="_blank" rel="noopener noreferrer" style="margin-left: 10px;"><i class="fab fa-github"></i> GitHub</a>
-        <i class="fas fa-map-marker-alt" style="margin-left: 10px;"></i> Marseille
-      </div>
-    </div>
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="#competences"><i class="fas fa-code"></i> Compétences</a></li>
-      <li><a href="#experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
-      <li><a href="#formations"><i class="fas fa-graduation-cap"></i> Formations</a></li>
-      <li><a href="#interets"><i class="fas fa-heart"></i> Intérêts</a></li>
-      <li><a href="#projets-personnels"><i class="fas fa-rocket"></i> Projets</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="competences" class="section">
-      <h2><i class="fas fa-code"></i> COMPÉTENCES TECHNIQUES</h2>
-      <div class="competence-group">
-        <h3>Virtualisation et Conteneurisation</h3>
-        <ul>
-          <li>Docker</li>
-          <li>Podman</li>
-          <li>VMware</li>
-          <li>Oracle VirtualBox</li>
-          <li>Proxmox</li>
-          <li>ESXi</li>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <ul class="sidebar-menu">
+            <li><a href="#hero" data-section="hero"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="#about" data-section="about"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="#skills" data-section="skills"><i class="fas fa-server"></i> Compétences</a></li>
+            <li><a href="#experience" data-section="experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
+            <li><a href="#education" data-section="education"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+            <li><a href="#projects" data-section="projects"><i class="fas fa-network-wired"></i> Projets</a></li>
+            <li><a href="#interests" data-section="interests"><i class="fas fa-heart"></i> Intérêts</a></li>
         </ul>
-      </div>
-      <div class="competence-group">
-        <h3>Systèmes et Réseaux</h3>
-      <ul>
-          <li>Téléphonie sur IP (VoIP)</li>
-          <li>Administration DNS</li>
-          <li>Configuration DHCP</li>
-          <li>Services de transfert FTP</li>
-          <li>Tunnels VPN</li>
-          <li>Connexions sécurisées SSH avec OpenSSH</li>
-        </ul>
-        <h4>Serveurs NAS:</h4>
-        <ul>
-          <li>Déploiement avec TrueNAS Scale</li>
-          <li>Installation directe sur Debian</li>
-        </ul>
-      </div>
-      <div class="competence-group">
-        <h3>Gestion et Déploiement</h3>
-        <ul>
-          <li>Git & GitHub (Versioning & Collaboration)</li>
-        </ul>
-      </div>
-    </section>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="https://github.com/Ge0mtech" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </nav>
 
-    <section id="experience" class="section">
-      <h2><i class="fas fa-briefcase"></i> EXPÉRIENCE </h2>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                      <span class="greeting">Bonjour, je suis</span>
+                      <span class="name">Swan Cuvelier</span>
+                    </h1>
+                    <p class="hero-subtitle">Étudiant en Administration Système & Réseau</p>
+                    <p class="hero-description">
+                        Recherche d'alternance pour septembre 2025 (3 ans). Passionné par l'infrastructure IT, 
+                        la virtualisation et la sécurité réseau. En formation continue pour devenir administrateur système.
+                    </p>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="floating-card card-1">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fab fa-windows"></i>
+                            <span>Windows Server</span>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Réseau</span>
+                        </div>
+                        <div class="floating-card card-4">
+                            <i class="fas fa-server"></i>
+                            <span>Virtualisation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
 
-      <div class="experience-item">
-        <h3>La Plateforme_</h3>
-        <p class="date">Oct. 2024 - Juillet 2025</p>
-        <p><strong>Bachelor IT - Cybersécurité</strong></p>
-        <p>Participation à des projets en équipe (3-4 personnes) axés sur la simulation de réseaux avec Cisco Packet Tracer, développement de scripts Bash, administration Linux (CLI), et gestion d'infrastructures DNS, DHCP, SSH, SFTP, FTP, et NAS (Debian). Configuration de TrueNAS Scale avec RAID 6 et gestion de versioning via Git/GitHub.</p>
-      </div>
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Basé à <strong>Marseille</strong>, je suis étudiant en Bachelor IT - Cybersécurité avec une 
+                            spécialisation en administration système & réseau. Actuellement en recherche d'alternance 
+                            pour septembre 2025 sur 3 ans, je souhaite approfondir mes compétences en infrastructure IT.
+                        </p>
+                        <p>
+                            Passionné par les technologies d'infrastructure, j'ai acquis une solide base en administration 
+                            Linux/Windows, virtualisation et gestion de réseaux. Mon expérience pratique en stage m'a permis 
+                            de découvrir les environnements professionnels et de développer mes compétences techniques.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>swancuvelier@gmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Marseille, France</span>
+                            </div>
+                            <a href="https://github.com/Ge0mtech" target="_blank" rel="noopener noreferrer" class="contact-item contact-link">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/Ge0mtech</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="experience-item">
-        <h3>Arcanes - Intégrateur Sage X3</h3>
-        <p class="date">25 mars - 20 avril 2024</p>
-        <p><strong>Stage pratique</strong></p>
-        <p>Développement d'une application web de gestion de listes de films et séries en utilisant Docker, MySQL, et Laravel.</p>
-      </div>
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Compétences Techniques</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fab fa-linux"></i>
+                            <h3>Administration Système Linux</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">Debian/Ubuntu</span>
+                            <span class="skill-tag">Systemd</span>
+                            <span class="skill-tag">Cron</span>
+                            <span class="skill-tag">Gestion de paquets</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fab fa-windows"></i>
+                            <h3>Administration Windows Server</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">Active Directory</span>
+                            <span class="skill-tag">Windows Server</span>
+                            <span class="skill-tag">PXE Boot</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Réseau & Infrastructure</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">TCP/IP</span>
+                            <span class="skill-tag">DNS/DHCP</span>
+                            <span class="skill-tag">VPN</span>
+                            <span class="skill-tag">VoIP</span>
+                            <span class="skill-tag">Cisco Packet Tracer</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-cube"></i>
+                            <h3>Virtualisation & Conteneurs</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">VMware ESXi</span>
+                            <span class="skill-tag">Proxmox VE</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Podman</span>
+                            <span class="skill-tag">VirtualBox</span>
+                            <span class="skill-tag">Hyper-V</span>
+                        </div>
+                    </div>
 
-      <div class="experience-item">
-        <h3>APHM - HÔPITAL NORD</h3>
-        <p class="date">27 nov. - 22 déc. 2023</p>
-        <p><strong>STAGE PRATIQUE</strong></p>
-        <p>Installation de Windows via serveur PXE et gestion des demandes informatiques à l'aide de GLPI.</p>
-      </div>
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-database"></i>
+                            <h3>Stockage & Sauvegarde</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">SAMBA</span>
+                            <span class="skill-tag">TrueNAS Scale</span>
+                            <span class="skill-tag">Rclone</span>
+                            <span class="skill-tag">RAID</span>
+                            <span class="skill-tag">Backup Solutions</span>
+                            <span class="skill-tag">Cloud Sync</span>
+                        </div>
+                    </div>
 
-      <div class="experience-item">
-        <h3>Pôle Emploi - Direction Régionale PACA</h3>
-        <p class="date">16 janv. - 10 fév. 2023</p>
-        <p><strong>Stage pratique</strong></p>
-        <p>Initiation à Active Directory et gestion des utilisateurs sur Windows Server.</p>
-      </div>
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Sécurité & Outils</h3>
+                        </div>
+                        <div class="skill-list">
+                            <span class="skill-tag">SSH/OpenSSH</span>
+                            <span class="skill-tag">SSL/TLS</span>
+                            <span class="skill-tag">GLPI</span>
+                            <span class="skill-tag">Git/GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="experience-item">
-        <h3>Régie des Transports Métropolitains (RTM)</h3>
-        <p class="date">7 juin - 1er juil. 2022</p>
-        <p><strong>Stage pratique</strong></p>
-        <p>Création d'un site web en HTML/CSS.</p>
-      </div>
-    </section>
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <h2 class="section-title">Expérience & Formation</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">Oct. 2024 - Juillet 2025</div>
+                        <div class="timeline-content">
+                            <h3>La Plateforme_ - Bachelor IT Cybersécurité</h3>
+                            <h4>Formation en Administration Système & Réseau</h4>
+                            <p>Formation spécialisée en cybersécurité avec focus administration système. Projets en équipe sur la simulation de réseaux complexes avec Cisco Packet Tracer, développement de scripts d'automatisation Bash, administration Linux en CLI, et gestion d'infrastructures virtualisées.</p>
+                            <div class="tech-used">
+                                <span class="tech-tag">Linux CLI</span>
+                                <span class="tech-tag">Cisco Packet Tracer</span>
+                                <span class="tech-tag">Bash Scripting</span>
+                                <span class="tech-tag">Network Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">25 mars - 20 avril 2024</div>
+                        <div class="timeline-content">
+                            <h3>Arcanes - Intégrateur Sage X3</h3>
+                            <h4>Stage - Infrastructure et Développement</h4>
+                            <p>Découverte de l'infrastructure applicative en entreprise : déploiement avec Docker, administration de base de données MySQL, configuration de serveurs web, et mise en place d'environnements de développement avec Laravel.</p>
+                            <div class="tech-used">
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Laravel</span>
+                                <span class="tech-tag">Web Server</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">27 nov. - 22 déc. 2023</div>
+                        <div class="timeline-content">
+                            <h3>APHM - Hôpital Nord</h3>
+                            <h4>Stage - Support IT & Administration Système</h4>
+                            <p>Initiation à l'administration système en environnement hospitalier : déploiement Windows via serveur PXE, gestion du parc informatique, traitement des incidents via GLPI, et support technique aux utilisateurs.</p>
+                            <div class="tech-used">
+                                <span class="tech-tag">PXE Boot</span>
+                                <span class="tech-tag">Windows Deployment</span>
+                                <span class="tech-tag">GLPI</span>
+                                <span class="tech-tag">IT Support</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">16 janv. - 10 fév. 2023</div>
+                        <div class="timeline-content">
+                            <h3>Pôle Emploi - Direction Régionale PACA</h3>
+                            <h4>Stage - Initiation Windows Server</h4>
+                            <p>Première approche de l'administration Windows Server : découverte d'Active Directory, gestion des utilisateurs et groupes, configuration de base des stratégies de groupe (GPO), et initiation à l'administration réseau.</p>
+                            <div class="tech-used">
+                                <span class="tech-tag">Active Directory</span>
+                                <span class="tech-tag">Windows Server</span>
+                                <span class="tech-tag">Group Policy</span>
+                                <span class="tech-tag">User Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">7 juin - 1er juil. 2022</div>
+                        <div class="timeline-content">
+                            <h3>Régie des Transports Métropolitains (RTM)</h3>
+                            <h4>Stage - Développement Web</h4>
+                            <p>Premier stage de découverte : création de sites web avec HTML/CSS et initiation aux technologies web en environnement professionnel.</p>
+                            <div class="tech-used">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">Web Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="formations" class="section">
-      <h2><i class="fas fa-graduation-cap"></i> FORMATIONS</h2>
-      <div class="formation-item">
-        <h3>La Plateforme_</h3>
-        <p class="date">Oct. 2024 - Juillet 2025</p>
-        <p><strong>Bachelor IT - Cybersécurité</strong></p>
-      </div>
-      <div class="formation-item">
-        <h3>BAC PRO SYSTÈME NUMÉRIQUE - OPTION C</h3>
-        <p class="date">SEPTEMBRE 2021 - JUIN 2024</p>
-        <p>BAC PRO SN OBTENUE AVEC MENTION BIEN</p>
-      </div>
-    </section>
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <h2 class="section-title">Formation</h2>
+                <div class="education-grid">
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>Bachelor IT - Cybersécurité</h3>
+                            <h4>La Plateforme_ - En cours</h4>
+                            <p class="education-date">Oct. 2024 - Juillet 2025</p>
+                            <p class="education-description">Formation spécialisée en cybersécurité avec focus sur l'administration système, la sécurisation d'infrastructures et la gestion de réseaux.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item">
+                        <div class="education-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <div class="education-content">
+                            <h3>BAC PRO Système Numérique - Option C</h3>
+                            <h4>Réseaux Informatiques et Systèmes Communicants - Mention Bien</h4>
+                            <p class="education-date">Septembre 2021 - Juin 2024</p>
+                            <p class="education-description">Formation technique en systèmes numériques, réseaux informatiques et infrastructure de communication. Base solide pour l'administration système.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="interets" class="section">
-      <h2><i class="fas fa-heart"></i> CENTRES D'INTÉRÊT</h2>
-      <ul class="interets-list">
-        <li><i class="fas fa-gamepad"></i> JEUX-VIDEOS</li>
-        <li><i class="fas fa-plane"></i> VOYAGE</li>
-        <li><i class="fas fa-book"></i> COMICS</li>
-        <li><i class="fas fa-users"></i> POP-CULTURE</li>
-        <li><i class="fas fa-print"></i> IMPRESSION 3D</li>
-      </ul>
-    </section>
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Projets Personnels</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Homelab - Infrastructure Domestique</h3>
+                            <p>Déploiement d'un laboratoire domestique pour l'apprentissage et l'expérimentation. Architecture basée sur Raspberry Pi 5 et Zimablade pour découvrir les technologies d'infrastructure en conditions réelles.</p>
+                            <div class="project-details">
+                                <h4>Infrastructure déployée :</h4>
+                                <ul>
+                                    <li><strong>Raspberry Pi 5 sous Debian 12 :</strong> Serveur principal</li>
+                                    <li><strong>Services NAS :</strong> Partages de fichiers via SAMBA</li>
+                                    <li><strong>Sécurité :</strong> SSH OpenSSH sur port 5251 avec authentification par clés</li>
+                                    <li><strong>Sauvegardes automatisées :</strong> Rclone vers conteneur Zimablade et Google Drive</li>
+                                    <li><strong>Conteneurisation :</strong> Plusieurs services Docker</li>
+                                    <li><strong>Zimablade :</strong> Environnement de test et bac à sable</li>
+                                </ul>
+                            </div>
+                            <div class="project-tags">
+                                <span class="project-tag">Raspberry Pi</span>
+                                <span class="project-tag">Debian 12</span>
+                                <span class="project-tag">Docker</span>
+                                <span class="project-tag">SAMBA</span>
+                                <span class="project-tag">SSH/OpenSSH</span>
+                                <span class="project-tag">Rclone</span>
+                                <span class="project-tag">Backup</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section id="projets-personnels" class="section">
-      <h2><i class="fas fa-rocket"></i> PROJETS PERSONNELS</h2>
-      <div class="projet-item">
-        <h3>Homelab</h3>
-        <p>Homelab intégrant Proxmox sur Zimablade comme bac à sable dédié à l'expérimentation en virtualisation et conteneurisation, permettant de tester diverses configurations et systèmes d'exploitation. L'infrastructure comprend également un Raspberry Pi 5 configuré en NAS Samba avec Docker et gérant des sauvegardes Rclone poussées vers un VPS OVH. L'accès distant est assuré par Twingate.</p>
-      </div>
-    </section>
-  </main>
+        <!-- Interests Section -->
+        <section id="interests" class="section">
+            <div class="container">
+                <h2 class="section-title">Centres d'Intérêt</h2>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-gamepad"></i>
+                        <span>Jeux-Vidéos</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-plane"></i>
+                        <span>Voyage</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-book"></i>
+                        <span>Comics</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-users"></i>
+                        <span>Pop-Culture</span>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-print"></i>
+                        <span>Impression 3D</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-  <footer>
-    <img src="./img/Ena_talk.gif" width="20" height="20" alt="Animated icon" > Droit d'auteur et tout le tralala <img src="./img/Ena_talk.gif" width="20" height="20" alt="Animated icon">
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                <img src="./img/Ena_talk.gif" width="20" height="20" alt="Animated icon">
+                Droit d'auteur et tout le tralala
+                <img src="./img/Ena_talk.gif" width="20" height="20" alt="Animated icon">
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
