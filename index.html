@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-présentation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/gif" href="./img/icon.gif">
+</head>
+<body class="bg-slate-950 text-slate-200 min-h-screen flex items-center justify-center relative selection:bg-brand-accent selection:text-brand-dark">
+
+    <!-- Background Elements -->
+    <div class="fixed inset-0 bg-grid z-0 pointer-events-none"></div>
+    <div class="fixed top-0 left-1/4 w-96 h-96 bg-brand-secondary/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob z-0"></div>
+    <div class="fixed top-0 right-1/4 w-96 h-96 bg-brand-accent/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000 z-0"></div>
+    <div class="fixed -bottom-32 left-1/3 w-96 h-96 bg-purple-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000 z-0"></div>
+
+    <!-- Main Content Container -->
+    <main class="relative z-10 w-full max-w-2xl p-6 mx-auto">
+        
+        <!-- Profile Card -->
+        <div class="glass-card rounded-3xl p-8 md:p-12 text-center md:text-left animate-fade-in-up border-t border-white/10">
+            
+            <!-- Header Section -->
+            <div class="flex flex-col md:flex-row items-center gap-8 mb-8">
+                <!-- Avatar / Initials -->
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-accent to-brand-secondary rounded-full blur opacity-25 group-hover:opacity-75 transition duration-1000 group-hover:duration-200"></div>
+                    <div class="relative w-32 h-32 rounded-full bg-slate-800 flex items-center justify-center border-2 border-slate-700 overflow-hidden">
+                        <!-- Using an icon since I don't have a guaranteed persistent photo URL, looks cleaner -->
+                        <img src="./img/Ena.png" alt="Swan Cuvelier" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute bottom-1 right-1 w-6 h-6 bg-green-500 border-4 border-slate-800 rounded-full" title="En poste"></div>
+                </div>
+
+                <!-- Name & Title -->
+                <div class="space-y-2">
+                    <div class="inline-block px-3 py-1 rounded-full bg-brand-accent/10 text-brand-accent text-xs font-bold tracking-wider uppercase mb-1 border border-brand-accent/20">
+                        <i class="fas fa-map-marker-alt mr-1"></i> Marseille, FR
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight">Swan C.</h1>
+                    <p class="text-xl text-slate-400 font-light">Tech Système & Réseau</p>
+                    <a href="https://www.diades.fr/" target="_blank" class="inline-block text-sm text-slate-500 hover:text-brand-accent transition-colors duration-200 underline decoration-slate-700 hover:decoration-brand-accent underline-offset-4">
+                        En alternance chez Diades (Groupe Setec)
+                    </a>
+                </div>
+            </div>
+
+            <!-- About Short -->
+            <div class="mb-8 space-y-4">
+                <p class="text-slate-300 leading-relaxed text-lg">
+                    Technicien Systèmes & Réseaux, j'assure le support utilisateur via la gestion de tickets et participe activement aux projets d'infrastructure de l'entreprise (déploiement de serveurs, tests logiciels, etc.).
+                    Étudiant au <a href="https://www.cesi.fr/" target="_blank" class="text-white font-semibold hover:text-brand-accent transition-colors underline decoration-slate-600 hover:decoration-brand-accent underline-offset-2">CESI</a>, je mets mes compétences au service de la performance et de la stabilité du SI.
+                </p>
+            </div>
+
+            <!-- Tech Stack (Minimalist) -->
+            <div class="mb-10">
+                <h3 class="text-xs uppercase tracking-widest text-slate-500 font-semibold mb-4">Stack Technique</h3>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3">
+                    <!-- Skill Badges -->
+                    <span class="tech-badge px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-sm flex items-center gap-2">
+                        <i class="fab fa-linux text-yellow-500"></i> Linux
+                    </span>
+                    <span class="tech-badge px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-sm flex items-center gap-2">
+                        <i class="fab fa-windows text-blue-400"></i> Windows Server
+                    </span>
+                    <span class="tech-badge px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-sm flex items-center gap-2">
+                        <i class="fas fa-network-wired text-green-400"></i> Réseau & TCP/IP
+                    </span>
+                    <span class="tech-badge px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-sm flex items-center gap-2">
+                        <i class="fab fa-docker text-blue-500"></i> Docker / Virtualisation
+                    </span>
+                    <span class="tech-badge px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-sm flex items-center gap-2">
+                        <i class="fas fa-headset text-purple-500"></i> Support Utilisateur
+                    </span>
+                    <span class="tech-badge px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 text-sm flex items-center gap-2">
+                        <i class="fas fa-tools text-gray-500"></i> Maintenance du SI
+                    </span>
+                </div>
+            </div>
+
+            <!-- Actions / Links -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <a href="https://www.linkedin.com/in/swan-c-995b2336a/" target="_blank" class="group relative flex items-center justify-center gap-3 px-6 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-xl transition-all font-medium overflow-hidden">
+                    <div class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+                    <i class="fab fa-linkedin text-xl relative z-10"></i>
+                    <span class="relative z-10">LinkedIn</span>
+                </a>
+
+                <a href="https://github.com/Ge0mtech" target="_blank" class="group flex items-center justify-center gap-3 px-6 py-4 bg-slate-800 hover:bg-slate-700 text-white rounded-xl border border-slate-600 transition-all font-medium">
+                    <i class="fab fa-github text-xl"></i>
+                    <span>Mon Github</span>
+                </a>
+                
+                <a href="mailto:swancuvelier@outlook.fr" class="md:col-span-2 group flex items-center justify-center gap-3 px-6 py-3 bg-transparent hover:bg-slate-800/50 text-slate-400 hover:text-white rounded-xl border border-dashed border-slate-700 hover:border-slate-500 transition-all text-sm">
+                    <i class="far fa-envelope"></i>
+                    <span>swancuvelier@outlook.fr</span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-12 text-center text-slate-600 text-sm">
+            <p>&copy; Droit d'auteur et tout le tralala</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
